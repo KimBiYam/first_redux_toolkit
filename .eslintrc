@@ -1,6 +1,24 @@
 {
 	"parser": "@typescript-eslint/parser",
 	"extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+	"settings": {
+		"import/resolver": {
+		  "alias": {
+			"map": [
+			  [
+				"@src",
+				"./src"
+			  ]
+			],
+			"extensions": [
+			  ".js",
+			  ".tsx",
+			  ".css",
+			  ".scss"
+			]
+		  }
+		}
+	},
 	"parserOptions": {
 		"ecmaVersion": 2018,
 		"sourceType": "module"
