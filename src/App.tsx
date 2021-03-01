@@ -1,10 +1,10 @@
 import React from 'react';
-import MyComponent from '@src/components/MyComponent';
+import Counter from '@src/components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <MyComponent />
+      <Counter />
     </div>
   );
 }
